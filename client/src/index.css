@@ -1,0 +1,402 @@
+/*--------------------------------IMPORTS------------------------------------/
+
+
+
+/*---------------------------GENERELL STYLING-------------------------------------*/
+
+.global-green-dark {
+  color: #4c8076;
+}
+.global-green-dark-bg {
+  background-color: #4c8076;
+}
+.global-green-light {
+  color: #64baaa;
+}
+.global-green-light-bg {
+  background-color: #64baaa;
+}
+.global-green-lighter {
+  color: #bfdcd7;
+}
+.global-orange {
+  color: #ffa17a;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.Toastify__progress-bar--error {
+  background-color: #ffa17a !important;
+}
+
+/*--------------------------REGISTER & LOGIN----------------------------------*/
+.register-container,
+.login-container {
+  width: 900px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 5px;
+}
+.illustration-img {
+  width: 500px;
+}
+.register-heading,
+.login-heading {
+  font-size: 32px;
+  text-align: start;
+  color: #64baaa;
+  font-weight: 600;
+}
+.register-form-container input,
+.login-form-container input {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid transparent;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+  transition: 0.5s ease-in-out;
+}
+.register-form-container input:focus,
+.login-form-container input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #dfdfdf;
+  color: #414141;
+  border-radius: 8px;
+}
+.register-form-container button,
+.login-form-container button {
+  outline: none !important;
+  border: none !important;
+  background-color: #ffa17a;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  font-weight: 500;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+}
+.register-form-container button:hover,
+.login-form-container button:hover {
+  transition: 0.5s ease;
+  background-color: #e0855d;
+}
+.navigate-message {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  text-align: start;
+  color: #414141;
+}
+.navigate-link {
+  color: #64baaa;
+  transition: 0.5s ease;
+}
+.navigate-link:hover {
+  color: #4c8076;
+  transition: 0.5s ease;
+}
+.swal-icon--success__line {
+  background-color: #64baaa;
+}
+.swal-icon--success__ring {
+  border-color: #64baaa !important;
+}
+.swal-button {
+  background-color: #ffa17a;
+  outline: none !important;
+  border: none !important;
+}
+.swal-button:hover {
+  background-color: #e0855d !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.swal-button:focus {
+  background-color: #ffa17a;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.swal-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #ffa17a !important;
+  border: none !important;
+}
+
+/*----------------------------------CHATSIDA--------------------------------------*/
+
+.logout-btn-container button {
+  outline: none !important;
+  border: none !important;
+  background-color: #ffa17a;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.5s ease-in-out;
+}
+.logout-btn-container button:hover {
+  transition: 0.5s ease;
+  background-color: #e0855d;
+}
+.chat-box-container {
+  width: 1200px;
+  background-color: #ffffff;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
+  border-radius: 5px;
+}
+/*CHATSSIDA WELCOME MESSAGE*/
+.welecome-chat-message {
+  border-radius: 8px;
+  background-color: #ffffff;
+  height: 500px;
+}
+.welcome-chat-message-heading {
+  font-size: 32px;
+}
+/*CHATSSIDA INPUT*/
+
+.chat-input-form {
+  position: relative;
+}
+.chat-input {
+  border: 2px solid #64baaa;
+  border-radius: 8px;
+}
+.chat-input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #64baaa;
+}
+.chat-emoji-btn {
+  border: none !important;
+  background-color: transparent;
+}
+.chat-emoji-btn i {
+  color: #64baaa;
+  font-size: 24px;
+}
+.chat-send-btn {
+  border: none !important;
+  border-radius: 8px;
+  background-color: #64baaa;
+  color: #ffffff;
+}
+.chat-send-btn:hover {
+  color: #ffffff;
+}
+.chat-send-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.chat-send-btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.chat-send-btn i {
+  font-size: 24px;
+  padding-right: 0.2rem;
+  padding-top: 0.2rem;
+}
+.emoji-picker-react {
+  position: absolute !important;
+  top: -350px;
+}
+.emoji-picker-react
+  .active-category-indicator-wrapper
+  .active-category-indicator {
+  display: none !important;
+}
+.emoji-search {
+  display: none !important;
+}
+.emoji-picker-react ul.skin-tones-list label {
+  display: none !important;
+}
+/* width */
+.emoji-picker-react .emoji-scroll-wrapper::-webkit-scrollbar {
+  width: 5px !important;
+}
+/* Track */
+.emoji-picker-react .emoji-scroll-wrapper::-webkit-scrollbar-track {
+  background: #ffffff !important;
+}
+/* Handle */
+.emoji-picker-react .emoji-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #acbcbaac !important;
+}
+/* Handle on hover */
+.emoji-picker-react .emoji-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #acbcba !important;
+}
+/*CHATSSIDA MESSAGES*/
+.chat-messages-container {
+  height: 500px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+.chat-messages-box {
+  height: 415.2px;
+  overflow-y: scroll;
+  box-shadow: inset 0px -11px 8px -10px rgb(244, 244, 244);
+}
+/* width */
+.chat-messages-box::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.chat-messages-box::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+/* Handle */
+.chat-messages-box::-webkit-scrollbar-thumb {
+  background: #acbcbaac;
+  border-radius: 2px;
+}
+/* Handle on hover */
+.chat-messages-box::-webkit-scrollbar-thumb:hover {
+  background: #acbcba;
+}
+.message {
+  max-width: 250px;
+}
+.chat-sended {
+  background-color: #9baaa848;
+  width: fit-content;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+}
+.chat-recieved {
+  background-color: #e0845d3b;
+  width: fit-content;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+}
+.chat-user-icon {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 0.4rem !important;
+}
+.chat-sended-icon {
+  background-color: #9baaa8;
+  color: #ffffff;
+  height: max-content;
+  border-radius: 100%;
+}
+.chat-recieved-icon {
+  background-color: #ffa17a;
+  color: #ffffff;
+  height: max-content;
+  border-radius: 100%;
+}
+/*CHATSSIDA CONTACTS*/
+.chat-user-container {
+  height: 500px;
+  background-color: #bfdcd7;
+  border-radius: 5px !important;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contact-container {
+  border-radius: 5px;
+}
+.contacts-current-user-box {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #4c8076;
+}
+.contacts-users-list-box {
+  height: 427.8px;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+/* width */
+.contacts-users-list-box::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.contacts-users-list-box::-webkit-scrollbar-track {
+  background: #bfdcd7;
+  border-bottom-right-radius: 5px;
+}
+/* Handle */
+.contacts-users-list-box::-webkit-scrollbar-thumb {
+  background: #acbcba;
+  border-radius: 2px !important;
+}
+/* Handle on hover */
+.contacts-users-list-box::-webkit-scrollbar-thumb:hover {
+  background: #9baaa8;
+}
+.contact-user {
+  background-color: #ffffff;
+  color: #4c8076;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.contact-user:hover {
+  background-color: #4c8076;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+.contact-user-selected {
+  background-color: #4c8076;
+  color: #ffffff;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 575.98px) {
+  .register-heading,
+  .login-heading {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .register-container,
+  .login-container {
+    box-shadow: none !important;
+  }
+  .contacts-current-user-box {
+    border-radius: 0px;
+  }
+  .chat-messages-container {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset !important;
+    border-radius: 0px !important;
+  }
+  .chat-user-container {
+    border-bottom-left-radius: 0px;
+  }
+  .chat-messages-container {
+    height: auto;
+  }
+  .chat-user-container {
+    box-shadow: none !important;
+    border-radius: 0px !important;
+  }
+  .contacts-users-list-box {
+    border-radius: 0px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
